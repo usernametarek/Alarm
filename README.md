@@ -21,17 +21,30 @@ Easy alarm system to make with a Raspberry PI 5 and it's components
 
 ![1 1](https://github.com/user-attachments/assets/ace3f1d0-165e-4b12-878f-90d75152b5a8)
 
-<h3>LCD Screen</h3>
+<h3>LCD Screen 0802</h3>
 <p>The LCD screen displays instructions for the user, such as prompting for password entry. If the password is incorrect, it shows a message indicating that the police have been alerted.</p>
+
+
+![2846-LCD802A_main-500x500](https://github.com/user-attachments/assets/22aedb35-1ed6-4dfd-961d-0bc2fe02153c)
+
 
 <h3>Buzzer</h3>
 <p>The buzzer activates as soon as an individual is detected. It will turn off if the correct password is entered; however, if the password is incorrect, it will emit a sound at a faster rate.</p>
+
+
+![buzzer](https://github.com/user-attachments/assets/465a105d-aee0-4e99-bb66-e47a7a844e45)
+
 
 <h3>2 Potentiometers</h3>
 <ol>
     <li> potentiometer 1 adjusts the contrast of the LCD screen to enhance visibility.</li>
     <li> potentiometer 2 allows for the adjustment of the detection distance of the ultrasonic proximity sensor.</li>
+
+![pot](https://github.com/user-attachments/assets/e763ee4e-8ff6-4a06-9718-1060bee426d4)
+
 </ol>
 
 <h3>ADS1115 Module</h3>
 <p>This module enables the connection of the potentiometer to ensure it functions properly.</p>
+
+![319104169_ads1115-16-bit-adc-module_x](https://github.com/user-attachments/assets/5b7e0e69-f055-4a7e-8e17-012d0f0581f3)
