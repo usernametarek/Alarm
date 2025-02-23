@@ -182,13 +182,13 @@ Easy alarm system to make with a Raspberry PI 5 and it's components
         <strong>Clone the git repository:</strong>
         <ul>
             <li>In the terminal within VS Code, run:
-                <pre><code>git clone ;</code></pre>
+                <pre><code>https://github.com/usernametarek/Alarm.git;</code></pre>
             </li>
         </ul>
     </li>
     <li>
         <strong>Navigate to the Project Directory:</strong>
-        <pre><code>cd ;</code></pre>
+        <pre><code>cd Alarm ;</code></pre>
     </li>
     <li>
         <strong>Install Required Libraries:</strong>
