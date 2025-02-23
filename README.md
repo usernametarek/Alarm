@@ -130,6 +130,87 @@ Easy alarm system to make with a Raspberry PI 5 and it's components
 </ol>
 
 
+<h2>Step-by-Step Installation Guide</h2>
+
+<ol>
+    <li>
+        <strong>Prepare Your Raspberry Pi:</strong>
+        <ul>
+            <li>Ensure your Raspberry Pi is powered on and connected to your network.</li>
+            <li>Enable SSH on your Raspberry Pi:
+                <ul>
+                    <li>You can do this via <code>raspi-config</code>:
+                        <pre><code>sudo raspi-config</code></pre>
+                    </li>
+                    <li>Navigate to <strong>Interfacing Options</strong> > <strong>SSH</strong> and enable it.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Find Your Raspberry Pi's IP Address:</strong>
+        <ul>
+            <li>Run the following command on your Raspberry Pi terminal:
+                <pre><code>hostname -I</code></pre>
+            </li>
+            <li>Note the IP address displayed (e.g., <code>192.168.1.100</code>).</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Set Up SSH Connection in VS Code:</strong>
+        <ul>
+            <li>Open Visual Studio Code.</li>
+            <li>Install the <strong>Remote - SSH</strong> extension if you haven't already.</li>
+            <li>Open the command palette (<code>Ctrl + Shift + P</code> or <code>Cmd + Shift + P</code>).</li>
+            <li>Type and select <strong>Remote-SSH: Connect to Host...</strong>.</li>
+            <li>Choose <strong>Add New SSH Host</strong> and enter the connection string:
+                <pre><code>ssh pi@&lt;YOUR_PI_IP_ADDRESS&gt;</code></pre>
+                Replace <code>&lt;YOUR_PI_IP_ADDRESS&gt;</code> with the actual IP address of your Raspberry Pi.
+            </li>
+            <li>Save the configuration when prompted.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Connect to Your Raspberry Pi:</strong>
+        <ul>
+            <li>Again, open the command palette and select <strong>Remote-SSH: Connect to Host...</strong>.</li>
+            <li>Choose the Raspberry Pi connection you just set up.</li>
+            <li>If prompted, enter the password for the <code>pi</code> user (default is <code>raspberry</code>, unless changed).</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Clone the git repository:</strong>
+        <ul>
+            <li>In the terminal within VS Code, run:
+                <pre><code>git clone ;</code></pre>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Navigate to the Project Directory:</strong>
+        <pre><code>cd ;</code></pre>
+    </li>
+    <li>
+        <strong>Install Required Libraries:</strong>
+        <pre><code>pip install adafruit-circuitpython-busio adafruit-circuitpython-ads1x15 adafruit-circuitpython-charlcd pigpio</code></pre>
+    </li>
+    <li>
+        <strong>Run the alarm.py file:</strong>
+        <ul>
+            <li>You can now run the alarm.py file and enjoy the project</li>
+        </ul>
+    </li>
+</ol>
+
+<h4>Additional Notes</h4>
+<ul>
+    <li>Ensure your Raspberry Pi has the necessary updates and packages:
+        <pre><code>sudo apt update
+sudo apt upgrade</code></pre>
+    </li>
+</ul>
+
+
 
 
 
